@@ -2,7 +2,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
-import { Party, Calendar, Gift, MapPin } from 'lucide-react';
+import { PartyPopper, Calendar, Gift, MapPin } from 'lucide-react';
 
 interface HeroProps {
   invitee?: string;
@@ -20,7 +20,7 @@ const Hero: React.FC<HeroProps> = ({ invitee = "Guest", onRsvpClick }) => {
         transition={{ duration: 0.8 }}
         className="mb-8 flex justify-center"
       >
-        <Party size={60} className="text-celebration-gold" />
+        <PartyPopper size={60} className="text-celebration-gold" />
       </motion.div>
       
       <motion.p 
